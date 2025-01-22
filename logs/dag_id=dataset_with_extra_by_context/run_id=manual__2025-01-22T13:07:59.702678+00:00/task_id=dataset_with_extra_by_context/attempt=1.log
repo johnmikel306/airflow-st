@@ -1,0 +1,25 @@
+[2025-01-22T13:08:05.016+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-01-22T13:08:05.024+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dataset_with_extra_by_context.dataset_with_extra_by_context manual__2025-01-22T13:07:59.702678+00:00 [queued]>
+[2025-01-22T13:08:05.030+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dataset_with_extra_by_context.dataset_with_extra_by_context manual__2025-01-22T13:07:59.702678+00:00 [queued]>
+[2025-01-22T13:08:05.030+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-01-22T13:08:05.041+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): dataset_with_extra_by_context> on 2025-01-22 13:07:59.702678+00:00
+[2025-01-22T13:08:05.045+0000] {standard_task_runner.py:72} INFO - Started process 13821 to run task
+[2025-01-22T13:08:05.047+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'dataset_with_extra_by_context', 'dataset_with_extra_by_context', 'manual__2025-01-22T13:07:59.702678+00:00', '--job-id', '4', '--raw', '--subdir', '/usr/local/python/3.12.1/lib/python3.12/site-packages/airflow/example_dags/example_outlet_event_extra.py', '--cfg-path', '/tmp/tmpon55h24o']
+[2025-01-22T13:08:05.048+0000] {standard_task_runner.py:105} INFO - Job 4: Subtask dataset_with_extra_by_context
+[2025-01-22T13:08:05.074+0000] {task_command.py:467} INFO - Running <TaskInstance: dataset_with_extra_by_context.dataset_with_extra_by_context manual__2025-01-22T13:07:59.702678+00:00 [running]> on host codespaces-70b800
+[2025-01-22T13:08:05.111+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='dataset_with_extra_by_context' AIRFLOW_CTX_TASK_ID='dataset_with_extra_by_context' AIRFLOW_CTX_EXECUTION_DATE='2025-01-22T13:07:59.702678+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-01-22T13:07:59.702678+00:00'
+[2025-01-22T13:08:05.112+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-01-22T13:08:05.112+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-01-22T13:08:05.112+0000] {logging_mixin.py:190} INFO - Current task name:dataset_with_extra_by_context state:running start_date:2025-01-22 13:08:05.025310+00:00
+[2025-01-22T13:08:05.112+0000] {logging_mixin.py:190} INFO - Dag name:dataset_with_extra_by_context and current dag run status:running
+[2025-01-22T13:08:05.113+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-01-22T13:08:05.113+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-01-22T13:08:05.122+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-01-22T13:08:05.122+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=dataset_with_extra_by_context, task_id=dataset_with_extra_by_context, run_id=manual__2025-01-22T13:07:59.702678+00:00, execution_date=20250122T130759, start_date=20250122T130805, end_date=20250122T130805
+[2025-01-22T13:08:05.136+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-01-22T13:08:05.137+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-01-22T13:08:05.137+0000] {logging_mixin.py:190} INFO - Dag name:dataset_with_extra_by_context queued_at:2025-01-22 13:07:59.718120+00:00
+[2025-01-22T13:08:05.137+0000] {logging_mixin.py:190} INFO - Task hostname:codespaces-70b800 operator:_PythonDecoratedOperator
+[2025-01-22T13:08:05.179+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-01-22T13:08:05.187+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-01-22T13:08:05.188+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
