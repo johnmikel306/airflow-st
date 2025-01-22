@@ -244,3 +244,10 @@
 [2025-01-22T13:20:39.655+0000] {logging_mixin.py:190} INFO - [2025-01-22T13:20:39.655+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-01-22T13:20:39.664+0000] {logging_mixin.py:190} INFO - [2025-01-22T13:20:39.664+0000] {dag.py:4180} INFO - Setting next_dagrun for example_short_circuit_operator to None, run_after=None
 [2025-01-22T13:20:39.680+0000] {processor.py:208} INFO - Processing /usr/local/python/3.12.1/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py took 0.052 seconds
+[2025-01-22T13:21:27.739+0000] {processor.py:186} INFO - Started process (PID=21881) to work on /usr/local/python/3.12.1/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-01-22T13:21:27.740+0000] {processor.py:914} INFO - Processing file /usr/local/python/3.12.1/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py for tasks to queue
+[2025-01-22T13:21:27.741+0000] {logging_mixin.py:190} INFO - [2025-01-22T13:21:27.741+0000] {dagbag.py:588} INFO - Filling up the DagBag from /usr/local/python/3.12.1/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-01-22T13:21:27.749+0000] {processor.py:925} INFO - DAG(s) 'example_short_circuit_operator' retrieved from /usr/local/python/3.12.1/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py
+[2025-01-22T13:21:27.761+0000] {logging_mixin.py:190} INFO - [2025-01-22T13:21:27.761+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-01-22T13:21:27.770+0000] {logging_mixin.py:190} INFO - [2025-01-22T13:21:27.770+0000] {dag.py:4180} INFO - Setting next_dagrun for example_short_circuit_operator to None, run_after=None
+[2025-01-22T13:21:27.794+0000] {processor.py:208} INFO - Processing /usr/local/python/3.12.1/lib/python3.12/site-packages/airflow/example_dags/example_short_circuit_operator.py took 0.059 seconds
